@@ -5,11 +5,18 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const objectRoutes = require("./app/routes/objectRoutes");
 require("dotenv/config");
+const githubRepoUrl =
+  "https://github.com/ScientificClubofESI/FlutterWorkshop_API";
 
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-
+app.get("/", (req, res) => {
+  res.send(
+    `<h1> Welcome to CSE Flutter Workshop API</h1> \
+    For more info <a href=${githubRepoUrl} target='_blank'> Click Here </a>`
+  );
+});
 app.use("/objects", objectRoutes);
 
 mongoose.connect(
