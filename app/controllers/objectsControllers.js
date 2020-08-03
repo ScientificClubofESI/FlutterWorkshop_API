@@ -31,7 +31,7 @@ exports.updateObject = async (req, res) => {
   try {
     const targetObject = await Object.findByIdAndUpdate(req.params.id, {
       name: req.body.name,
-      body: req.body.description,
+      description: req.body.description,
     });
     res.json({
       message: "Object Updated Successfully",
