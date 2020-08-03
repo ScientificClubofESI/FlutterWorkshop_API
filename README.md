@@ -1,6 +1,6 @@
 # FlutterWorkshop_API
 API created to be used for the flutter workshop built in Express Js
-
+check it on Heroku: https://flutterworkshop-api-cse.herokuapp.com/
 ## Routes 
 Different routes you can use in this API
 
