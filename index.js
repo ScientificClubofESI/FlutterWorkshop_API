@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const objectRoutes = require("./app/routes/objectRoutes");
+const productsRoutes = require("./app/routes/productsRoutes");
 require("dotenv/config");
 const githubRepoUrl =
   "https://github.com/ScientificClubofESI/FlutterWorkshop_API";
@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
     For more info <a href=${githubRepoUrl} target='_blank'> Click Here </a>`
   );
 });
-app.use("/objects", objectRoutes);
+app.use("/products", productsRoutes);
 
 mongoose.connect(
   process.env.CONNECT_DB,

@@ -1,28 +1,32 @@
 # FlutterWorkshop_API
-API created to be used for the flutter workshop built in Express Js
-
+API created to be used for the flutter workshop built in Express Js.
+###### Check it on this link: https://flutterworkshop-api-cse.herokuapp.com/
 ## Routes 
 Different routes you can use in this API
 
-###### `GET` /objects/all 
-Get all objects in database 
+###### `GET` /products/all 
+Get all products in database 
 
-###### `POST` /objects/create
-Create a new object in database with this model : 
+###### `POST` /products/create
+Create a new product in database with this model : 
 ```
-objectSchema = {
+productschema = {
 name : String,
 description : String,
+image: String,
+price: Number,
 }
 ```
-###### `PUT` /objects/update/id
-Edit an existing object identified in database with its id
+###### `PUT` /products/update/id
+Edit an existing product identified in database with its id
 according to this model : 
 ```
-objectSchema = {
+productschema = {
 name : String,
 description : String,
+image: String,
+price: Number,
 }
 ```
-###### `DELETE` /objects/delete/id
-Delete an existing object identified in database with its id
+###### `DELETE` /products/delete/id
+Delete an existing product identified in database with its id
