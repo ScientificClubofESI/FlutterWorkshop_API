@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const productsRoutes = require("./app/routes/productsRoutes");
+const productsRoutes = require("./app/routes/ProductsRoutes");
 require("dotenv/config");
 const githubRepoUrl =
   "https://github.com/ScientificClubofESI/FlutterWorkshop_API";
