@@ -9,7 +9,7 @@ const githubRepoUrl =
   "https://github.com/ScientificClubofESI/FlutterWorkshop_API";
 
 app.use(cors());
-app.use(bodyParser.urlencoded({ extended: false }));
+
 app.use(bodyParser.json());
 app.get("/", (req, res) => {
   res.send(

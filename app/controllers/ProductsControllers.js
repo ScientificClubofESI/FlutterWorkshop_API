@@ -14,7 +14,7 @@ exports.createProduct = async (req, res) => {
   try {
     const newProduct = Product({
       name: req.body.name,
-      description: req.body.description,
+      color: req.body.color,
       price: req.body.price,
       image: req.body.image,
     });
@@ -33,7 +33,7 @@ exports.updateProduct = async (req, res) => {
   try {
     const targetProduct = await Product.findByIdAndUpdate(req.params.id, {
       name: req.body.name,
-      description: req.body.description,
+      color: req.body.color,
       price: req.body.price,
       image: req.body.image,
     });
